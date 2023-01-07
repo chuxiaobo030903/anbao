@@ -44,9 +44,7 @@ module.exports = {
     extensions: [ '.tsx', '.ts', '.jsx', '.js'],
     //别名配置
     alias: {
-      '@src': resolve(__dirname, '../src'),
-      '@config': resolve(__dirname, '../config'),
-      '@pages': resolve(__dirname, '../src/pages'),
+        '@': resolve(__dirname, '../src'),
     }
   },
   plugins: [
