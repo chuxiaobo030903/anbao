@@ -3,10 +3,10 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   entry: {
-    'jwzx_screen': './src/index.tsx'
+    'jwzx_screen': './src/app.tsx'
   },
   output: {
-    path: resolve(__dirname, '../dist'),
+    path: resolve(__dirname, '../../dist'),
     filename: 'js/[name].[contenthash].js',
   },
   module: {
@@ -44,7 +44,7 @@ module.exports = {
     extensions: [ '.tsx', '.ts', '.jsx', '.js'],
     //别名配置
     alias: {
-        '@': resolve(__dirname, '../src'),
+        '@': resolve(__dirname, '../../src'),
     }
   },
   plugins: [

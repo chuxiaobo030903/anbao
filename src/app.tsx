@@ -1,13 +1,13 @@
 import React, { memo } from "react";
 import ReactDOM from 'react-dom/client';
-import { HashRouter,Router,Routes} from 'react-router-dom';
-import RouteTable from "./router";
+import { HashRouter } from 'react-router-dom';
+import Route from "./router";
 import '@/public/css/base.scss';
 import '@/public/iconfont/iconfont.css';
-
+// import 'antd/dist/antd.css';
 
 const App =  memo(() => {
-    return <RouteTable />
+    return <Route />
 });
 
 const root: any = document.getElementById('root');

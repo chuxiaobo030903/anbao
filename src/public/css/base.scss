@@ -13,17 +13,12 @@
 
 html,
 body,
-#csj {
-  width: 100%;
-  height: 100%;
-  background: #f2f2f2;
-}
 /*字体更具实际项目自己添加字体样式和大小*/
 body {
   font-family: arial, 微软雅黑;
   font-size: 14px;
   overflow: auto;
-  min-width: 990px;
+  min-width: 1200px;
   color: #333;
 }
 a {

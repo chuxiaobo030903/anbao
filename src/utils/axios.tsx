@@ -36,7 +36,6 @@ axios.interceptors.response.use((config: any) => {
 });
 
 //今日驻地现场路线
-export const byDateTime = async (params: any) => {
+export const ajxDemo = async (params: any) => {
   return await axios.post('/api/todayTask/byDateTime', params)
 }
-
