@@ -10,7 +10,7 @@ const App =  memo(() => {
     return <Route />
 });
 
-const root: any = document.getElementById('root');
+const root: any = document.getElementById('xroot');
 ReactDOM.createRoot(root).render(
     <HashRouter>
         <App/>

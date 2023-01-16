@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom';
 export const useToPage = () => {
     const navigate = useNavigate();
     const NToXtest = ()=> navigate('/xtest');
-    const NToLogin = ()=>{navigate('/login')};
+    const NToLogin = ()=> navigate('/login');
     return { NToXtest,NToLogin }
 }
 

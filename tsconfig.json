@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    "experimentalDecorators": true, //开启装饰器@
     "target": "ESNext",
     "lib": ["DOM", "DOM.Iterable", "ESNext"],
     "allowJs": false,
@@ -18,6 +19,6 @@
     "paths": {
         "@": ["src"],
         "@/*": ["src/*"]
-    }
+    },
   },
 }
