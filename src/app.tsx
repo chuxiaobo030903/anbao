@@ -5,7 +5,6 @@ import Route from "./router";
 import '@/public/css/base.scss';
 import '@/public/iconfont/iconfont.css';
 // import 'antd/dist/antd.css';
-
 const App =  memo(() => {
     return <Route />
 });

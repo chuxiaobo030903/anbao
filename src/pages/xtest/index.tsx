@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import {_mobx} from '@/store/index';
+import { _mobx } from '@/store/index';
 import './index.less';
 
 const Xtest: any = () => {

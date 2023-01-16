@@ -1,22 +1,12 @@
-// import { observable } from 'mobx'
 
-// class $ {
-//     @observable xMobxValue = '123';
-// }
-// export const _mobx = new $
-
-import { makeAutoObservable,observable,action} from 'mobx'
-
-
+import { makeAutoObservable } from 'mobx'
 class $ {
-    xMobxValue:any= ''
     constructor () {
-        this.xMobxValue = '123'
-        makeAutoObservable(this)
+        makeAutoObservable(this);
     }
-
-    async setXmobxValue (xMobxValue: any) {
-        this.xMobxValue = xMobxValue || ''
+    xMobxValue:string = '初始化mobx变量值';
+    async setXmobxValue (value: string) {
+        this.xMobxValue = value;
     }
 
 }

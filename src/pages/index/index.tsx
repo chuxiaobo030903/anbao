@@ -1,21 +1,19 @@
 import React, { useEffect } from "react";
 
-import { observable } from 'mobx'
 // import { SearchOutlined,ReloadOutlined} from '@ant-design/icons'
 // import { message,Input } from 'antd';
 import './index.less';
-import {observer,useStore} from '@/store/storeHook';
-// import {_mobx } from '@/store/index';
+import { _mobx } from '@/store/index';
+import { observer } from 'mobx-react'
 import { ajxDemo } from '@/utils/axios'
 import { useToPage } from '@/utils/navigateHook'
 
+
 // const { Search } = Input
 const Index: any = () => {
-    const _mobx = useStore();
     const {NToXtest,NToLogin} = useToPage();
     useEffect(() => {
         pageInit()
-        console.log('首页index123456789',_mobx.xMobxValue);
     }, []);
 
     const pageInit = async()=>{
@@ -28,8 +26,7 @@ const Index: any = () => {
             <div className="xcol-box">
                 <div className="xflex" onClick={()=>{NToXtest()}}>goto Xtest</div>
                 <div className="xflex mt30 mb30" onClick={()=>{NToLogin()}}>goto login</div>
-                <div className="xflex" onClick={()=>{_mobx.setXmobxValue('cxb777777777')}}>2222222</div>
-                {/* <div className="xflex" onClick={()=>{_mobx.xMobxValue= 'cxb777777777'}}>2222222</div> */}
+                <div className="xflex" onClick={()=>{_mobx.setXmobxValue('双向绑定改变mobx变量值') }}>2222222</div>
             </div>
             <div className="f30">
                 <span className="zt-iconfont zt-caiwuguanli"></span>
@@ -49,5 +46,3 @@ const Index: any = () => {
 };
 
 export default observer(Index);
-
-// export default Index;
