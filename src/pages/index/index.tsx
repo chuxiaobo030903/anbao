@@ -3,7 +3,7 @@ import React, { useEffect } from "react";
 // import { SearchOutlined,ReloadOutlined} from '@ant-design/icons'
 // import { message,Input } from 'antd';
 import './index.less';
-import { _mobx ,observer} from '@/store/index';
+import { _mobx,observer } from '@/store/index';
 import { ajxDemo } from '@/utils/axios'
 import { useToPage } from '@/utils/navigateHook'
 

@@ -7,6 +7,7 @@ class $ {
     }
     xMobxValue:string = '初始化mobx变量值';
     setXmobxValue = (value: string) => {
+        console.log('可以进行ajx请求方法!');
         this.xMobxValue = value;
     }
 
