@@ -24,6 +24,10 @@
         path: "/login",
         component: 'pages/login/index'
     },
+    {
+        path: "/leaflet",
+        component: 'pages/leaflet-demo/index'
+    },
     // {
     //     path: "*",
     //     component: 'pages/404'

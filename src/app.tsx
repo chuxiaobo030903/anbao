@@ -2,7 +2,7 @@ import React, { memo } from "react";
 import ReactDOM from 'react-dom/client';
 import { HashRouter } from 'react-router-dom';
 import Route from "./router";
-import '@public/css/base.scss';
+import '@public/css/base.css';
 import '@public/iconfont/iconfont.css';
 // import 'antd/dist/antd.css';
 const App =  memo(() => {
