@@ -1,5 +1,6 @@
 const { resolve } = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const WebpackBar = require('webpackbar');
 
 module.exports = {
   entry: {
@@ -59,6 +60,7 @@ module.exports = {
       //   removeComments: true // 去注释
       // }
     }),
+    new WebpackBar()
   ],
   //性能如果一个资源超过 250kb，webpack 会对此输出一个警告来通知你。
   performance: {
