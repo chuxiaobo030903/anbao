@@ -1,5 +1,4 @@
 
-  import { lazy } from 'react'
   import routeGuard from 'anbao-router'
 
   const Route:any = [
@@ -8,26 +7,26 @@
         redirect: '/index',
     },
     {
-      path: '/',
-      component: lazy(() => import('@/pages/components/xheard/index')),
-      children: [
-        {
-          path: '/index',
-          component: lazy(() => import('@/pages/index/index'))
-        },
-        {
-            path: '/xtest',
-            component: lazy(() => import('@/pages/xtest/index'))
-        }
-      ]
+        path: '/',
+        component: 'pages/components/xheard/index',
+        children: [
+            {
+            path: '/index',
+            component: 'pages/index/index'
+            },
+            {
+                path: '/xtest',
+                component: 'pages/xtest/index'
+            }
+        ]
     },
     {
         path: "/login",
-        component: lazy(() => import('@/pages/login/index'))
+        component: 'pages/login/index'
     },
     // {
     //     path: "*",
-    //     component: lazy(() => import('@/pages/404))
+    //     component: 'pages/404'
     // }
   ]
 

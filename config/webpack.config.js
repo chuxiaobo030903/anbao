@@ -1,5 +1,5 @@
 const { merge } = require('webpack-merge')
-const {baseConfig,productionConfig,developmentConfig} = require('anbao-webapck')
+const {baseConfig,productionConfig,developmentConfig} = require('anbao-webpack')
 // TODO 用户自定义webapck配置
 module.exports = (env) => {
   switch(true) {

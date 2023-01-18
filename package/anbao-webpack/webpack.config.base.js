@@ -45,6 +45,8 @@ module.exports = {
     //别名配置
     alias: {
         '@': resolve(__dirname, '../../src'),
+        '@config': resolve(__dirname, '../../config'),
+        '@public': resolve(__dirname, '../../public'),
     }
   },
   plugins: [

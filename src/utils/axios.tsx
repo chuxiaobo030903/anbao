@@ -1,5 +1,5 @@
 import axios from 'axios';
-const cfg = require('../../config/config.local');
+const cfg = require('@config/config.local');
 
 // 设置默认请求头(判断是否是本地环境)
 if (/(localhost|127)/.test(window.location.host)) {
